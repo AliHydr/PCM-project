@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\ReceiptController;
 use App\Http\Controllers\CurrencyController;
 
 /*
@@ -20,3 +22,5 @@ Route::get('/', function () {
 
 
 Route::resource('currencies', CurrencyController::class);
+Route::resource('payments', PaymentController::class);
+Route::resource('receipts', ReceiptController::class);

@@ -17,6 +17,7 @@
         @livewireStyles
     </head>
     <body class="antialiased">
+        <x-side-bar />
         {{$slot}}
         @livewireScripts
     </body>

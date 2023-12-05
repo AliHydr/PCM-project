@@ -35,9 +35,9 @@ class User extends Authenticatable
 
     public function defaultCurrency()
     {
-        return $this->belongsTo(Currency::class, 'default_currency_id');
+        return $this->hasOne(Currency::class, 'default_currency_id');
     }
-    
+
     /**
      * The attributes that should be cast.
      *
