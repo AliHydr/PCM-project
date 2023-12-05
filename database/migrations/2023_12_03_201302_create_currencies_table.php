@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('code')->unique();
             $table->string('name')->unique();
+            $table->decimal('rate', 10, 4);
+            $table->foreignId('default_currency_id')->nullable()->constrained('currencies');
             $table->timestamps();
         });
     }

@@ -33,6 +33,11 @@ class User extends Authenticatable
         'remember_token',
     ];
 
+    public function defaultCurrency()
+    {
+        return $this->belongsTo(Currency::class, 'default_currency_id');
+    }
+    
     /**
      * The attributes that should be cast.
      *

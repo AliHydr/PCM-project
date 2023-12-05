@@ -13,6 +13,10 @@
                 <label for="name" class="form-label">Currency Name</label>
                 <input type="text" class="form-control" id="name" name="name" value="{{ $currency->name }}" required>
             </div>
+            <div class="mb-3">
+                <label for="name" class="form-label">Currency Rate</label>
+                <input type="number" class="form-control" id="name" name="name" value="{{ $currency->rate }}" required>
+            </div>
             <button type="submit" class="btn btn-primary">Update Currency</button>
         </form>
     </div>
